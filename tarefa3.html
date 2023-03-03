@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cadastro</title>
+</head>
+
+<header><h1>Matrícula Aluno</h1></header>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <br>
+            <label for="letter">Nome: </label>
+            <input type="text" name="letter" id="letter" required pattern="[a-zA-Z\s]+$" placeholder="Nome">
+
+            <br><br>
+
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf" required pattern="(\d{3}\.\d{3}\.\d{3}\-\d{2})|(\d{11})" placeholder="XXX.XXX.XXX-XX">
+
+            <br><br>
+
+            <label for="dt">Data de Nascimento: </label>
+            <input type="date" name="dt" id="dt" required>
+
+            <br><br>
+            <label for="sexo">Sexo: </label>
+
+            <input type="radio" id="s1" name="sexo" value="fem">
+            <label for="s1">Feminino</label>
+
+            <input type="radio" id="s2" name="sexo" value="mas">
+            <label for="s2">Masculino</label>
+
+            <br><br>
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="letter" id="letter" required pattern="[a-zA-Z\s]+$">
+
+            <label for="estado"> Estado: </label>
+            <select name="estados" id="uf">
+                <option value="sp">AC</option>
+                <option value="rj">AL</option>
+                <option value="pr">AM</option>
+                <option value="pr">AP</option>
+                <option value="pr">BA</option>
+                <option value="pr">CE</option>
+                <option value="pr">DF</option>
+                <option value="pr">ES</option>
+                <option value="pr">GO</option>
+                <option value="pr">MA</option>
+                <option value="pr">MG</option>
+                <option value="pr">MS</option>
+                <option value="pr">MT</option>
+                <option value="pr">PA</option>
+                <option value="pr">PB</option>
+                <option value="pr">PE</option>
+                <option value="pr">PI</option>
+                <option value="pr">PR</option>
+                <option value="pr">RJ</option>
+                <option value="pr">RN</option>
+                <option value="pr">RO</option>
+                <option value="pr">RR</option>
+                <option value="pr">RS</option>
+                <option value="pr">SC</option>
+                <option value="pr">SE</option>
+                <option value="pr">SP</option>
+                <option value="pr">TO</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da Matrícula</legend>
+            <label for="radio">Curso: </label>
+            <br>
+            <input type="radio" id="r1" name="radio" value="ADS">
+            <label for="r1">Análise e Desenvolvimento de Sistemas</label>
+
+            <input type="radio" id="r2" name="radio" value="ENG">
+            <label for="r2">Eng. Mecânica</label>
+
+            <input type="radio" id="r3" name="radio" value="TSI">
+            <label for="r3">Tecnologia em Sistemas Para Internet</label>
+
+            <br><br>
+
+            <label for="disciplinas">Disciplina(s) Optativa</label>
+
+            <br>
+
+            <input type="checkbox" id="mat1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Programação de Robos </label>
+
+            <input type="checkbox" id="mat2" name="vehicle2" value="Car">
+            <label for="vehicle2">Desenvolvimento de Inteligências Artificiais </label>
+
+            <br>
+
+            <input type="checkbox" id="mat3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Modelagem Computacional</label>
+
+            <input type="checkbox" id="mat3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Ambientes Isolados: Desenvolvimento com Docker</label>
+
+            <br><br>
+
+            <label for="sugestoes">Sugestões de Disciplinas Futuras: </label>
+
+            <br>
+
+            <textarea id="w3review" name="w3review" rows="4" cols="50"> 
+            </textarea><br>  
+
+        </fieldset>
+        <input type="submit" value="Submit" style="margin-right: 53%; margin-left: 47%;">
+    </form>
+</body>
