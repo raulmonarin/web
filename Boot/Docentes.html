@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navbar com Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      .navbar{
+        height: 80px;
+        border-bottom: 1px solid black;
+      }
+      .navbar-logo {
+        height: 100px;
+        width: 130px;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-35%);
+      }
+      hr{
+        border-top: 1px solid black;
+      }
+      .row{
+        display: flex;
+        margin-top: 10px;
+      }
+      .row div{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+      .col-md-4{
+        display: flex;
+      }
+      .col-md-4 img{
+        height: 80%; 
+        width: 95%; 
+      }
+      div div img{
+        height: 30% !important;
+        width: 40% !important;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Instalações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Docentes</a>
+          </li>
+        </ul>
+        <img src="C:\logo_etec_cor.png" class="navbar-logo">
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <a href="https://drive.google.com/file/d/1HyEYjRyNRF861IqW00r6xclaQtYx989c/view"><p><h5>Calendário Acadêmico</h5></p></a>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <a href="https://www.etecamimjundi.com.br/eventos"><p><h5>Eventos</h5></p></a>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <a href="https://www.etecamimjundi.com.br/links-uteis"><p><h5>Links</h5></p></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="18682097.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
