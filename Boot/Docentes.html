@@ -19,7 +19,8 @@
         transform: translateY(-35%);
       }
       hr{
-        border-top: 1px solid black;
+        border-top: 1px solid white;
+        max-width: 100%;
       }
       .row{
         display: flex;
@@ -31,16 +32,33 @@
         align-items: center;
         justify-content: center;
       }
-      .col-md-4{
+      .row div{
         display: flex;
+        width: 90%;
+        height: 90%;
       }
       .col-md-4 img{
         height: 80%; 
         width: 95%; 
       }
-      div div img{
+      .card-img-top{
         height: 30% !important;
         width: 40% !important;
+      }
+      .card-body{
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      .card{
+        width: 200px;
+        height: 200px;
       }
     </style>
   </head>
@@ -50,56 +68,148 @@
       <div class="container-fluid">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link " href="#">Home</a>
+            <a class="nav-link " href="Home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">Instalações</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Docentes</a>
+            <a class="nav-link active" href="Docentes.html">Docentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Docentes.html">Contato</a>
           </li>
         </ul>
-        <img src="C:\logo_etec_cor.png" class="navbar-logo">
+        <img src="logo_etec_cor.png" class="navbar-logo">
       </div>
     </nav>
     <div class="row">
-      <div class="col-md-4" style="border-right: 1px solid black;">
-        <a href="https://drive.google.com/file/d/1HyEYjRyNRF861IqW00r6xclaQtYx989c/view"><p><h5>Calendário Acadêmico</h5></p></a>
+      <div class="col-md-4">
+        <a href="https://drive.google.com/file/d/1HyEYjRyNRF861IqW00r6xclaQtYx989c/view"><p><h5></h5></p></a>
       </div>
-      <div class="col-md-4" style="border-right: 1px solid black;">
-        <a href="https://www.etecamimjundi.com.br/eventos"><p><h5>Eventos</h5></p></a>
+      <div class="col-md-4">
+        <p><h5>Cenheça Nossos Docentes</h5></p>
       </div>
-      <div class="col-md-4" style="border-right: 1px solid black;">
-        <a href="https://www.etecamimjundi.com.br/links-uteis"><p><h5>Links</h5></p></a>
+      <div class="col-md-4">
+        <a href="https://www.etecamimjundi.com.br/links-uteis"><p><h5></h5></p></a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4" style="border-right: 1px solid black;">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="ham.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Richard Hammond</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Empreendedor</p>
             </div>
           </div>
       </div>
       <div class="col-md-4" style="border-right: 1px solid black;">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="images.jfif" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Jeremy Clarkson</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Jornalista</p>
             </div>
           </div>
       </div>
       <div class="col-md-4" style="border-right: 1px solid black;">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="18682097.jpg" alt="Card image cap">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="may.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">James May</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Autor</p>
             </div>
           </div>
       </div>
     </div>
     
+    <div class="row">
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="xado.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Machado de Assis</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Autor</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="dom-pedro2.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Dom Pedro II</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Ex-Imperador</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="lance.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Lance Reddick</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Ator</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="vala.JPG" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Zavala</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Comandante da Vanguarda</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="ance.webp" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Lance Vance</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Golpista</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid black;">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="easypetegb.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Easy Pete</p>
+            </div>
+            <hr>
+            <div class="card-body">
+              <p class="card-text">Piromaniaco</p>  
+            </div>
+          </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

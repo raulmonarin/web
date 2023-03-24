@@ -24,15 +24,21 @@
       .row{
         display: flex;
         margin-top: 10px;
+        max-width: 100%;
       }
       .row div{
         display: flex;
         flex: 1;
         align-items: center;
         justify-content: center;
+        width: 100%;
       }
-      .col-md-4{
-        display: flex;
+      .row div a{
+        text-align: center;
+      }
+      .col-md-4 a{
+        height: 100%;
+        width: 95%;
       }
       .col-md-4 img{
         height: 80%; 
@@ -46,16 +52,19 @@
       <div class="container-fluid">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="Home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Instalações</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kkkkk2.html">Docentes</a>
+            <a class="nav-link" href="Docentes.html">Docentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Docentes.html">Contato</a>
           </li>
         </ul>
-        <img src="C:\logo_etec_cor.png" class="navbar-logo">
+        <img src="logo_etec_cor.png" class="navbar-logo">
       </div>
     </nav>
     <div class="row">
@@ -65,22 +74,27 @@
       <div class="col-md-4" style="border-right: 1px solid black;">
         <a href="https://www.etecamimjundi.com.br/eventos"><p><h5>Eventos</h5></p></a>
       </div>
-      <div class="col-md-4" style="border-right: 1px solid black;">
+      <div class="col-md-4">
         <a href="https://www.etecamimjundi.com.br/links-uteis"><p><h5>Links</h5></p></a>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4" style="border-right: 1px solid black;">
-        <img src="C:\calendar.jpg" alt="image" class="calendar">
+        <a href="https://drive.google.com/file/d/1HyEYjRyNRF861IqW00r6xclaQtYx989c/view"><img src="calendar.jpg" alt="image" class="calendar"></a>
       </div>
       <div class="col-md-4" style="border-right: 1px solid black;">
-        <img src="C:\palco.avif" alt="image" class="palco">
+        <a href="https://www.etecamimjundi.com.br/eventos"><img src="palco.avif" alt="image" class="palco"></a>
       </div>
-      <div class="col-md-4" style="border-right: 1px solid black;">
-        <img src="C:\click.jpg" alt="image" class="links">
+      <div class="col-md-4">
+        <a href="https://www.etecamimjundi.com.br/links-uteis"><img src="click.jpg" alt="image" class="links"></a>
       </div>
     </div>
     
+    <footer>
+      <div>
+        <p></p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
