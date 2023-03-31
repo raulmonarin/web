@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculando o IMC com JavaScript</title>
+  </head>
+  <body>
+    <h1>Calculadora de IMC</h1>
+    <form>
+      <label for="altura">Informe a sua altura (em metros):</label>
+      <input type="number" id="altura" name="altura" step="0.01"><br>
+
+      <label for="peso">Informe o seu peso (em kg):</label>
+      <input type="number" id="peso" name="peso"><br>
+
+      <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+      function calcularIMC() {
+        // Obtemos os valores dos campos de entrada
+        var altura = Number(document.getElementById("altura").value);
+        var peso = Number(document.getElementById("peso").value);
+
+        // Calculamos o IMC
+        var imc = peso / (altura * altura);
+
+        // Mostramos o resultado na div
+        document.getElementById("resultado").innerHTML = "Seu IMC é: " + imc.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
