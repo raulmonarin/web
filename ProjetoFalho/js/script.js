@@ -6,7 +6,6 @@ let app = {};
 
    /*
     *  Build an array of levels.
-    *  This will scale better if it is stored in a separate JSON File.
     */
    let levels = [];
    levels[0] = {
@@ -99,8 +98,6 @@ let app = {};
 
    /*
     *  The game object constructor.
-    *  @param {String} id - the id of the game container DOM element.
-    *  @param {Object} level - the starting level of the game.
     */
    function Game(id, level) {
 
@@ -130,8 +127,6 @@ let app = {};
 
    /*
     * Create a tile or sprite <div> element.
-    * @param {Number} x - the horizontal coordinate the 2D array.
-    * @param {Number} y - the vertical coordinate in the 2D array.
     */
    Game.prototype.createEl = function (x, y, type) {
       // create one tile.
@@ -185,7 +180,6 @@ let app = {};
 
    /*
     * Place the player or goal sprite.
-    * @param {String} type - either 'player' or 'goal', used by createEl and becomes DOM ID
     */
    Game.prototype.placeSprite = function (type) {
 
