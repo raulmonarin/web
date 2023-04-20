@@ -194,10 +194,12 @@ div.layer div {
  */
 
 .default .floor {
+  content: url(sand.jpg);
   background-color: lightgrey;
 }
 
 .default .wall {
+  content: url(agua.jpg);
   background-color: skyblue;
 }
 
@@ -205,11 +207,14 @@ div.layer div {
  * grassland theme  
  */
 .grassland .floor {
-  background-color: #7bb76d;
+  background-color: #806d51;
 }
 
 .grassland .wall {
+  content: url(grassland.png);
   background-color: #806d51;
+  /* background-color: #7bb76d; */
+  /* background-color: #806d51; */
 }
 
 .grassland #player {
@@ -224,6 +229,7 @@ div.layer div {
 }
 
 .dungeon .wall {
+  content: url(nether.webp);
   background-color: #9c649c;
 }
 
@@ -244,7 +250,7 @@ div.layer div {
  * Goal colors
  */
 .goal {
-  background-color: #FFD700;
+  content: url(Coroa.png);
   border: 1px solid #98720b;
 }
 
