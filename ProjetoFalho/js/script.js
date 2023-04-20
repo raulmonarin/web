@@ -440,41 +440,7 @@ let app = {};
       });
 
    }
-   /*
-    * Adds mouse down listeners to buttons
-    */
-   // Game.prototype.buttonListeners = function () {
-   //    let up = document.getElementById('up');
-   //    let left = document.getElementById('left');
-   //    let down = document.getElementById('down')
-   //    let right = document.getElementById('right');
 
-   //    // the sprite is out of date
-   //    let obj = this;
-   //    up.addEventListener('mousedown', function () {
-
-   //       obj.moveUp();
-   //       obj.checkGoal();
-   //    });
-   //    down.addEventListener('mousedown', function () {
-   //       obj.moveDown();
-   //       obj.checkGoal();
-   //    });
-   //    left.addEventListener('mousedown', function () {
-   //       obj.moveLeft();
-   //       obj.checkGoal();
-   //    });
-   //    right.addEventListener('mousedown', function () {
-   //       obj.moveRight();
-   //       obj.checkGoal();
-   //    });
-
-   // }
-
-   /*
-    * Sets the message of the text element.
-    * @param {String} msg - The message to be printed.
-    */
    Game.prototype.setMessage = function (msg) {
       let text_el = this.el.querySelector('.text');
       text_el.textContent = msg;
