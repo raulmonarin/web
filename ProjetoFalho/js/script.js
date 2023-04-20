@@ -1,3 +1,4 @@
+
 let app = {};
 
 
@@ -95,8 +96,6 @@ let app = {};
          y: 15
       }
    };
-
-
 
    /*
     *  The game object constructor.
@@ -566,6 +565,7 @@ document.getElementById("gameStart").addEventListener("click", function () {
       document.getElementById("seconds").innerHTML = pad(++sec % 60);
       document.getElementById("minutes").innerHTML = pad(parseInt(sec / 60, 10));
    }, 1000);
+   document.getElementById("my_audio").play();
 });
 
 
